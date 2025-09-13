@@ -1,0 +1,1 @@
+docker run --rm -d -e PORT=9023 -p 9023:9023 --name gcp-storage-emulator oittaa/gcp-storage-emulator
