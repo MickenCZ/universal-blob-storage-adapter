@@ -1,1 +1,0 @@
-docker run --rm -d -p 4566:4566 -p 4571:4571 -e SERVICES=s3 -e DEBUG=1 -e DATA_DIR=/tmp/localstack/data localstack/localstack
