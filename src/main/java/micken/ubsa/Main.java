@@ -1,12 +1,14 @@
 package micken.ubsa;
 
-import java.io.IOException;
+import micken.ubsa.testclients.AWSTest;
+import micken.ubsa.testclients.AzureTest;
+import micken.ubsa.testclients.GCPTest;
 
 public class Main {
     public static void main(String[] args) {
-        //new AWSTest();
-        //new AzureTest();
-        //new GCPTest();
+        new AWSTest().test();
+        new AzureTest().test();
+        new GCPTest().test();
 
 
     }
