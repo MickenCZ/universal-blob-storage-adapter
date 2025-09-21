@@ -1,4 +1,4 @@
-package micken.ubsa;
+package micken.ubsa.testclients;
 
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
@@ -13,8 +13,9 @@ import software.amazon.awssdk.services.s3.model.S3Exception;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 
-public class AWSTest {
-    public AWSTest() {
+public class AWSTest implements BlobStoreTest {
+    @Override
+    public void test() {
         String bucketName = "my-local-bucket";
         String key = "example.txt";
         String content = "Hello from Java and LocalStack S3!";

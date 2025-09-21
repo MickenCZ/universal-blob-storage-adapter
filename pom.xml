@@ -20,12 +20,14 @@
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>s3</artifactId>
             <version>${aws.sdk.version}</version>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>auth</artifactId>
             <version>${aws.sdk.version}</version>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -38,6 +40,7 @@
             <groupId>com.azure</groupId>
             <artifactId>azure-storage-blob</artifactId>
             <version>12.31.2</version>
+            <optional>true</optional>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-storage -->
@@ -45,6 +48,7 @@
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-storage</artifactId>
             <version>2.57.0</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

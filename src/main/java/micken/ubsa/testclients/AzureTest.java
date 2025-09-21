@@ -1,4 +1,4 @@
-package micken.ubsa;
+package micken.ubsa.testclients;
 
 import com.azure.storage.blob.BlobClient;
 import com.azure.storage.blob.BlobContainerClient;
@@ -11,8 +11,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
-public class AzureTest {
-    public AzureTest() {
+public class AzureTest implements BlobStoreTest {
+    @Override
+    public void test() {
         String accountName = "devstoreaccount1";
         String accountKey = "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==";
 

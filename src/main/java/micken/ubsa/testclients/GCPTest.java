@@ -1,10 +1,11 @@
-package micken.ubsa;
+package micken.ubsa.testclients;
 
 import com.google.cloud.NoCredentials;
 import com.google.cloud.storage.*;
 
-public class GCPTest {
-    public GCPTest() {
+public class GCPTest implements BlobStoreTest {
+    @Override
+    public void test() {
         String emulatorHost = "http://localhost:9023";
 
         // Dummy project ID (emulator doesn’t enforce)
